@@ -1,79 +1,86 @@
-<div id="back">
-  <canvas id="canvas" class="canvas-back"></canvas>
-  <div class="backRight">    
-  </div>
-  <div class="backLeft">
-  </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <main id="container">
+        <form id="login_form"> 
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon-stars"></i>
+            </div>
+        <div id="social_media">
+            <a href="#">
+                <img src="assets/imgs/facebook.png" alt="Facebook Logo">
+            </a>
+
+            <a href="#">
+                <img src="assets/imgs/google.png" alt="Google Logo">
+            </a>
+
+        </div>
+
+        <div id="inputs">
+            <div class="input-box">
+                <label for="name">
+                    Nome
+                    <div class="input-field">
+                        <i class="fa-solid fa-user-hair-long"></i>
+                        <input type="text" id="name" name="Name">
+                    </div>
+                </label>
+            </div>
+
+            <div class="input-box">
+                <label for="email">
+                    Email
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </label>
+            </div>
+
+            <div class="input-box">
+                <label for="password">
+                    Senha
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </label>
+
+                <div id="forgot_password">
+                    <a href="#">
+                        Esqueceu sua senha?
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sign_in">
+            <a href="#">
+                Não tem uma conta? Cadastre-se!
+            </a>
+        </div>
+    </div>
+
 </div>
 
-<div id="slideBox">
-  <div class="topLayer">
-    <div class="left">
-      <div class="content">
-        <h2>Cadastrar</h2>
-        <form id="form-signup" method="post" onsubmit="return false;">
-          <div class="form-element form-stack">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" type="email" name="email">
-          </div>
-          <div class="form-element form-stack">
-            <label for="username-signup" class="form-label">Nome de usuário</label>
-            <input id="username-signup" type="text" name="username">
-          </div>
-          <div class="form-element form-stack">
-            <label for="password-signup" class="form-label">Senha</label>
-            <input id="password-signup" type="password" name="password">
-          </div>
-          <div class="form-element form-checkbox">
-            <input id="confirm-terms" type="checkbox" name="confirm" value="yes" class="checkbox">
-            <label for="confirm-terms">Eu concordo com os <a href="#">Termos de Serviço</a> e <a href="#">Política de Privacidade</a></label>
-          </div>
-          <div class="form-element form-submit">
-            <button id="signUp" class="signup" type="submit" name="signup">Cadastro</button>
-            <button id="goLeft" class="signup off">Entrar</button> 
-          </div>
+        <button type="submit" id="login_button">
+            Login
+        </button>
         </form>
-      </div>
-    </div>
-    <div class="right">
-      <div class="content">
-        <h2>Entrar</h2>
-        <form id="form-login" method="post" onsubmit="return false;">
-          <div class="form-element form-stack">
-            <label for="username-login" class="form-label">Nome de usuário</label>
-            <input id="username-login" type="text" name="username">
-          </div>
-          <div class="form-element form-stack">
-            <label for="password-login" class="form-label">Senha</label>
-            <input id="password-login" type="password" name="password">
-          </div>
-          <div class="form-element form-submit">
-            <button id="logIn" class="login" type="submit" name="login">Entrar</button>
-            <button id="goRight" class="login off" name="signup">Cadastrar-se</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 
-
-Remixed from "Sliding Login Form" Codepen by
-C-Rodg (github.com/C-Rodg)
-https://codepen.io/crodg/pen/yNKxej
-
-Remixed from "Paper.js - Animated Shapes Header" Codepen by
-Connor Hubeny (@cooper_hu)
-https://codepen.io/cooper_hu/pen/ybxoev
-
-Custom Checkbox based on the blog post by
-Mik Ted (@inserthtml):
-https://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
-
-HTML5 Form Validation based on the blog post by
-Thoriq Firdaus (@tfirdaus):
-https://webdesign.tutsplus.com/tutorials/
-html5-form-validation-with-the-pattern-attribute--cms-25145
-
--->
+    </main>
+</body>
+</html>
