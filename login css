@@ -154,3 +154,38 @@
     #login_button:hover {
         transform: scale(1.05);
     }
+
+    #signin_button {
+        border: none;
+        background: var(--color-gradient);
+        color: var(--color-light-50);
+        padding: 7px;
+        font-size: 18px;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #signin_button:hover {
+        transform: scale(1.05);
+    }
+
+    #log_in a {
+        text-decoration: none;
+        font-size: 12px;
+        color: var(--color-dark-50);
+    }
+
+    #log_in a:hover {
+        color: var(--color-purple-50);
+    }
+
+    #back a {
+        text-decoration: none;
+        font-size: 12px;
+        color: var(--color-dark-50);
+    }
+
+    #back a:hover {
+        color: var(--color-purple-50);
+    }
